@@ -1,3 +1,10 @@
+var myFirstObj = {"preference": "ice cream"};
+
+myFirstObj.preference = "video games";
+myFirstObj.pet = "cat";
+delete myFirstObj.pet;
+console.log(myFirstObj);
+
 //--------------------------------------
 // Exercises 2 - Objects
 //--------------------------------------
