@@ -1,5 +1,5 @@
 //--------------------------------------
-// Exercises 2 - Arrays, for loops
+// Exercises 3 - Arrays, for loops
 //--------------------------------------
 //Exercise 1 - Array Positioning
 
