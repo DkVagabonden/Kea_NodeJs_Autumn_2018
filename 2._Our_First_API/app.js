@@ -20,4 +20,10 @@ app.get("/sendStatus", function(req, res) {
     res.sendStatus(404);
 });
 
-app.listen(3000);
+var server = app.listen(3000, function(err) {
+    if (err) {
+        console.log("Failed to start the server on port %d.", server.address().port);
+    } else {
+        console.log("Server is running on port %d.", server.address().port);
+    }
+});
