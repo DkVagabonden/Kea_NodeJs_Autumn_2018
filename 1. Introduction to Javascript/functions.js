@@ -1,4 +1,4 @@
-console.log(multiplication(3, 9));
+//console.log(multiplication(3, 9));
 
 function multiplication(a, b) {
     return a * b;
@@ -18,10 +18,26 @@ function findBrian(peopleArray) {
     }
 }
 
-console.log(findBrian(people));
+//console.log(findBrian(people));
 
 var derission = function() {
     console.log("You suck!");
 }
 
-derission();
+//derission();
+
+var getName = function(person) {
+    console.log("The name is: ", person.name);
+};
+
+function getMe(getName) {
+    var me = {
+        "name": "Anders",
+        "age": 30 
+    };
+    getName(me);
+}
+
+getMe(getName);
+//console.log(getMe().name);
+
