@@ -87,6 +87,22 @@
 				$(this).toggleClass("used-boxed-clicked");
 			});	
 		});
+		
+		$(document).ready(function() {
+			$("#submit-button").mouseover(function() {
+				$(this).text("You're now ready to click this button");
+			});
+			$("#submit-button").mouseleave(function() {
+				$(this).text("Click me!");
+			});
+
+			let reasonCounter = 3;
+			$("#submit-button").click(function() {
+				reasonCounter++;
+				$("#first-list").append("<p>Reason " + reasonCounter + " </p>");
+				console.log($(this).parent());
+			})
+		});
 
 	</script>
 <!-- Assignment
