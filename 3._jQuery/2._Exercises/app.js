@@ -1,14 +1,14 @@
-var express = require("express");
-var app = express();
+const express = require("express");
+const app = express();
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/index.html");
-});
+    res.sendFile(__dirname + "/LearningJqueryAssignment.html");
+})
 
 app.listen(3000, function(err) {
     if (err) {
-        console.log("failed to start the server");
+        console.log("error running file ", err);
     } else {
-        console.log("server started on port 3000")
+        console.log("Server running on port 3000");
     }
 });
