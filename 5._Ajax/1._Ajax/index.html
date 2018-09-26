@@ -22,7 +22,30 @@
             $("body").css("background-color", hexColor);       
         });
 
+        const usernameGet = "andl";
+        const passwordGet = "hunter123";
+        // GET request
+        // NEVER use GET to submit data that should be encrypted
+        // this is just an example of how to use GET with ajax
+        /*$.ajax({
+            "url": "submit-form",
+            "data": {
+                username: usernameGet,
+                password: passwordGet
+            },
+            //"url": "submit-form?username= " + username + "&password=" + password,
+            "method": "GET"
+        });*/
 
+        // POST
+        $.ajax({
+            "url": "submit-form",
+            "method": "POST",
+            "data": {
+                username: ?,
+                password: ?
+            }
+        });
 
     </script>
 </body>
