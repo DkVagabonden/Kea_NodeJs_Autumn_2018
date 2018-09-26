@@ -12,7 +12,8 @@ app.get("/", function(req, res) {
 
 app.post("/submit-form", function(req, res) {
     console.log("body", req.body);
-    res.redirect("/");
+    //res.redirect("/");
+    res.send("Everything went OK, status 200");
 });
 
 // Create an endpoint where the first part of the url is /get-info
