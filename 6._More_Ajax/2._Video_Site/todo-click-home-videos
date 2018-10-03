@@ -1,0 +1,4 @@
+1. Create array on the server that contains filenames
+2. show all videos on the front page..
+3. when clicking a video instead of playing the video go to the url: /player?video={...video id} 
+use window.location.href = /player?video={...video id} to go to the new link location
