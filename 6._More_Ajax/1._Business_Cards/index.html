@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    
+    <form method="POST">
+        <input id="company" name="company" placeholder="company">
+        <input id="name" name="name" placeholder="name">
+        <input id="position" name="position" placeholder="position">
+        <button>Submit Business Card</button>
+    </form>
+
+    <div class="business-cards"></div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            "url": "get-business-cards",
+            "method": "GET"
+        }).done(function(response) {
+            $.each(response, function(key, value) {
+                $(".business-cards").append("<p>"+value.company+"</p>");
+            });
+        });
+
+        $("form").submit(function(event) {
+            event.preventDefault();
+
+            const company = $("#company").val();
+            const name = $("#name").val();
+            const position = $("#position").val();
+
+            $.ajax({
+                "url": "add-business-card",
+                "method": "POST",
+                "data": { company, name, position }
+            }).done(function(response) {
+                $(".business-cards").append("<p>"+response.company+"</p>")
+            });
+        });
+
+    </script>
+
+</body>
+</html>
