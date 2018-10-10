@@ -1,5 +1,5 @@
 let script = document.createElement('script');
-script.src = 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js';
+script.src = '/scripts/jQuery.js';
 script.type = 'text/javascript';
 
 script.onreadystatechange = handler;

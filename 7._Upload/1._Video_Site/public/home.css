@@ -1,0 +1,22 @@
+.video {
+    background-color: black;
+    height: 120px;
+    width: 240px;
+ }
+
+.video-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+    grid-gap: 5px;
+    margin: 0 40px 0 40px;  
+    justify-items: center; 
+}
+
+.title {
+    font-weight: bold;
+}
+
+
+// video-card
+
+// video
