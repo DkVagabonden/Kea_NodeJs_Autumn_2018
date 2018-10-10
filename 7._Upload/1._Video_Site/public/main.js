@@ -10,6 +10,6 @@ var head = document.getElementsByTagName('head')[0];
 head.appendChild(script);
 
 function handler() {
-    $("#header").load("/components/header.html");
-    $("#footer").load("/components/footer.html");
+    $("#header").load("../components/header.html");
+    $("#footer").load("../components/footer.html");
 }

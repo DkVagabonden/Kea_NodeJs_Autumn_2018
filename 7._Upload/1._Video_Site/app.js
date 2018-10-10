@@ -6,7 +6,7 @@ const videos = ["Car-driving.mp4", "Raindrops.mp4"];
 app.use(express.static('public'));
 
 app.get("/", function(req, res) {
-    res.sendFile(__dirname + "/public/home.html");
+    res.sendFile(__dirname + "/public/home/home.html");
 });
 
 app.get("/featured-videos", function(req, res) {
@@ -18,7 +18,7 @@ app.get("/featured-videos", function(req, res) {
 
 // todo get video id from query string
 app.get("/player", function(req, res) {
-    res.sendFile(__dirname + "/public/player.html");
+    res.sendFile(__dirname + "/public/player/player.html");
 });
 
 app.get("/upload", function(req, res) {
