@@ -6,9 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="upload.css" />
     <script src="../scripts/jQuery.js"></script>
-    <script src="upload.js"></script>
 </head>
 <body>
-        <h1>Upload Page</h1>
+        <h1>Upload A new video</h1>
+
+        <form encType="multipart/form-data" action="/upload" method="POST">
+            <p>Upload Video</p>
+            <input type="file" accept="video/ogg, video/mp4" name="uploadedFile" onchange="fileAdded(this.files)">
+            <button type="submit">Submit Video</button>
+       </form>
+    
+       <script src="upload.js"></script>
 </body>
 </html>
