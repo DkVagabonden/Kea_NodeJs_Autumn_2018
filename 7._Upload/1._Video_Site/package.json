@@ -9,6 +9,8 @@
   "author": "Anders Latif",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.16.3"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^1.0.0-alpha.1"
   }
 }
