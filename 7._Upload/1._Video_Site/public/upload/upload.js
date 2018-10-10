@@ -32,5 +32,4 @@ function validateFile(file) {
     } else {
         fileValid = false;
     }
-    console.log(fileValid);
 }
