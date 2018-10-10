@@ -9,7 +9,16 @@
 </head>
 <body>
     
-    <p>Footer</p>
+    <div class="copyright"></div>
 
+    <div class="contact">
+        <p>contact</p>
+    </div>
+
+    
+    <script>
+        const date = new Date().getFullYear();
+        $(".copyright").append("<p>" + "&copy; " + date + "</p>");
+    </script>
 </body>
 </html>

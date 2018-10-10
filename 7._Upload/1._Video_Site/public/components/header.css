@@ -10,11 +10,6 @@
     width: 120px;
 }
 
-.a-button {
-    font: bold 20px Arial;
-    text-decoration: none;
-}
-
 .upload-button {
     background-color: #008CBA;
     color: #333333;
@@ -25,6 +20,7 @@
     border-left: 1px solid #008CBA;
     float: right;
     margin-right: 25px;
+    font: bold 20px Arial;
 }
 
 .upload-button:hover {
