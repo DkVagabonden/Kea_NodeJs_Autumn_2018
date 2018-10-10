@@ -21,6 +21,13 @@ app.get("/player", function(req, res) {
     res.sendFile(__dirname + "/public/player.html");
 });
 
+app.get("/upload", function(req, res) {
+    res.sendFile(__dirname + "/public/upload/upload.html");
+});
+
+app.post("/upload", function(req, res) {
+    res.send("File uploaded correctly!");
+});
 
 const server = app.listen("3000", function(err) {
     if (err) {
