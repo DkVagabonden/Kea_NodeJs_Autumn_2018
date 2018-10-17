@@ -7,8 +7,8 @@ MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
     const favoriteGames = db.collection("favorite_games");
 
     favoriteGames.find({"rating": {$gt: 8.2}}).sort({"rating": -1}).limit(3).toArray( function( err, foundGames ) {
-		console.log( foundGames );
+        console.log( foundGames );
+        
+        client.close();
 	});
-
-    client.close();
 });

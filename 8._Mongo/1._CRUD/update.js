@@ -6,6 +6,15 @@ MongoClient.connect(url, { useNewUrlParser: true }, function(err, client) {
     const db = client.db("games");
     const favoriteGames = db.collection("favorite_games");
 
-    favoriteGames.insertOne({"name": "Fifa"});
-    client.close();
+    var originalData = {"name": "International Karate"};
+	var newData = {$set: {"password": "T1"}};
+
+	// add new field
+	favoriteGames.update(originalData, newData, function( err, data ) {
+		console.log(data);
+
+		client.close();
+	});
+
+
 });
