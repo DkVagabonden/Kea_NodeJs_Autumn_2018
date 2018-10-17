@@ -1,0 +1,12 @@
+#footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    width: 100%;
+    margin-top: 30px;
+    position: absolute;
+    bottom: 0;
+}
+
+.contact {
+    margin-right: 40px;
+}

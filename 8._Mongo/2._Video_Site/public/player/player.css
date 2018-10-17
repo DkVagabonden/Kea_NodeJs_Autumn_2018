@@ -1,0 +1,7 @@
+body {
+    display: grid;
+}
+
+#player {
+    justify-self: center;
+}

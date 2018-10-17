@@ -1,0 +1,18 @@
+{
+  "name": "video_site",
+  "version": "1.0.0",
+  "description": "A simple video site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anders Latif",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "express-fileupload": "^1.0.0-alpha.1",
+    "uniqid": "^5.0.3",
+    "video-thumbnail-generator": "^1.1.3"
+  }
+}

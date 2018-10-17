@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Upload</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="upload.css" />
+    <script src="../scripts/jQuery.js"></script>
+    <script src="../main.js"></script>
+</head>
+<body>
+        <div id="header"></div>
+
+        <h1>Upload a new video</h1>
+
+        <form encType="multipart/form-data" action="/upload" method="POST" onsubmit="return submittingForm()">
+            <p>Upload Video</p>
+            <input type="file" accept="video/ogg, video/mp4" name="uploadedFile" onchange="fileAdded(this.files)">
+            <p>Title</p>
+            <input class="upload-title" name="title" placeholder="title">
+            <p>Description</p>
+            <textarea class="description" name="description" placeholder="description"></textarea>
+            <p>Categories</p>
+            <select>
+                <option value="comedy">Comedy</option>
+                <option value="action">Action</option>
+                <option value="sport">Sport</option>
+                <option value="educational">Educational</option>
+                <option value="nsfw">Patrick's corner</option>
+                <option value="vlog">Vlog</option>
+                <option value="keatubepoop">Keatube poop</option>
+            </select>
+            <p>Tags</p>
+            <input class="tags" name="tags" placeholder="comma-seperated tags">
+
+            <br/>
+            <button class="submit-button" type="submit">Submit Video</button>
+       </form>
+
+       <div id="footer"></div>
+
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.28.4/sweetalert2.all.min.js"></script>
+       <script src="upload.js"></script>
+
+</body>
+</html>
