@@ -1,0 +1,30 @@
+Relational databases (SQL)
+--------------------
+Mysql (Oracle)
+Mssql
+GQL
+Postgresql
+Mariadb
+Aurora / RDS
+Sqlite
+
+From now on noSQL
+
+Document database
+-----------------
+MongoDB
+Google cloud firestore
+CouchDB
+
+Key-value Store
+---------------
+BerkelyDB
+LevelDB
+
+Object databases
+----------------
+Realm
+
+Graph databases
+---------------
+Neo4j
