@@ -1,0 +1,8 @@
+improve the player page, include player meta data
+
+recommend videos based on tags and categories
+
+design
+
+user interaction / login
+

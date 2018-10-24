@@ -1,0 +1,19 @@
+{
+  "name": "knex_migration",
+  "version": "1.0.0",
+  "description": "Testing migrations with Knex",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "create-migration": "knex migrate:make name",
+    "migrate-run": "knex migrate:latest",
+    "migrate-rollback": "knex migrate:rollback",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Anders Latif",
+  "license": "MIT",
+  "dependencies": {
+    "knex": "^0.15.2",
+    "mysql2": "^1.6.1"
+  }
+}
