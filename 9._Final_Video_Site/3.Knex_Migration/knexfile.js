@@ -1,13 +1,13 @@
-// Update with your config settings.
+const config = require("./mysql_config/mysql_credentials_local");
 
 module.exports = {
 
   development: {
     client: 'mysql2',
     connection: {
-      database: 'my_db',
-      user:     'username',
-      password: 'thisismypassword'
+      database: config.database,
+      user:     config.user,
+      password: config.password
     }
   }
 };
