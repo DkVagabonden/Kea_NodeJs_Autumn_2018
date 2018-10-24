@@ -1,0 +1,21 @@
+form {
+    display: grid;
+    justify-items: center;
+}
+
+.upload-title {
+    width: 50em;
+}
+
+.description {
+    height: 6em;
+    width: 50em;
+}
+
+.tags {
+    width: 50em;
+}
+
+.submit-button {
+    margin-top: 20px;
+}

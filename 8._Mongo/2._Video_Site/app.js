@@ -35,6 +35,7 @@ app.get("/upload", function(req, res) {
 });
 
 app.post("/upload", function(req, res) {
+    console.log("req body form: ", req.body);
     if (req.files) {
         const video = req.files.uploadedFile;
         const fileExtension = video.name.substr(video.name.length - 4);
