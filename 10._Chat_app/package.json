@@ -1,7 +1,7 @@
 {
-  "name": "knex_migration",
+  "name": "1._chat_app",
   "version": "1.0.0",
-  "description": "Testing migrations with Knex",
+  "description": "A chat app",
   "main": "app.js",
   "scripts": {
     "start-dev": "nodemon app.js",
@@ -13,8 +13,9 @@
   "author": "Anders Latif",
   "license": "MIT",
   "dependencies": {
+    "express": "^4.16.4",
     "knex": "^0.15.2",
     "mysql2": "^1.6.1",
-    "objection": "^1.3.0"
+    "objection": "^1.4.0"
   }
 }
