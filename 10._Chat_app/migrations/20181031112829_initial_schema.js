@@ -20,9 +20,10 @@ exports.up = function(knex, Promise) {
         })
         .createTable('user_rooms', function(table) {
             table.increments('id').primary();
-            table.integer('user_id');
-            table.integer('room_id');
-//            table.integer('user_id').references('id').inTable('users');
+            table.integer('room_id').unsigned().notNullable()
+            table.integer('user_id').unsigned().notNullable()
+            table.foreign('user_id').references('users.id');
+            table.foreign('room_id').references('rooms.id');
         });
 };
 
