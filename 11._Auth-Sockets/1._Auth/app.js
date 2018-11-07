@@ -3,15 +3,18 @@ const app = express();
 
 const session = require('express-session');
 app.use(session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
     cookie: { secure: true }
 }));
 
 const bodyParser = require('body-parser');
-app.use(bodyParser.urlEncoded({'extended': true}));
+app.use(bodyParser.urlencoded({ extended: true }))
 app.use(bodyParser.json());
 
 const Model = require('objection').Model;
-const knexConfig = require('./knexfile');
+const knexConfig = require('./knexfile').development;
 const knex = require('knex')(knexConfig);
 
 Model.knex(knex);
