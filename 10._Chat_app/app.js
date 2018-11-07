@@ -6,7 +6,7 @@ const db = {};
 const userRoutes = require('./routes/user');
 userRoutes.userRoutes(app, db);
 
-app.listen(3000, function(err) {pm
+app.listen(3000, function(err) {
     if (err) throw err;
 
     console.log("the server is running!");
