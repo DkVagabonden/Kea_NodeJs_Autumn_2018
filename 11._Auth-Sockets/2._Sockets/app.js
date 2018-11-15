@@ -24,4 +24,4 @@ io.on('connect', socket => {
 server.listen(3000, (err) => {
     if (err) throw err;
     console.log("server is running on port 3000");
-})
+});
